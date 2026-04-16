@@ -135,36 +135,36 @@ make clean
 ## 3. Demo Screenshots
 
 ### SS1. Supervisor startup + multi-container launch
-![Supervisor startup](screenshots/ss1_supervisor_startup.jpeg)
-![Multiple containers](screenshots/ss1b_multi_container.jpeg)
+![Supervisor startup]![alt text](1-2.png)
+![Multiple containers]![alt text](2.png)
 Supervisor starts and then tracks multiple containers concurrently.
 
 ### SS2. Metadata tracking (`engine ps`)
-![Metadata table](screenshots/ss2_metadata_ps.jpeg)
+![Metadata table]![alt text](3.png)
 Container ID, host PID, state, and limits are visible in one listing.
 
 ### SS3. Logging pipeline
-![Pipeline output](screenshots/ss3_logging_pipeline.jpeg)
+![Pipeline output]![alt text](4.png)
 Logs captured from container stdout/stderr are persisted and retrievable.
 
 ### SS4. CLI to supervisor IPC
-![CLI IPC](screenshots/ss4_cli_ipc.jpeg)
+![CLI IPC]![alt text](5.png)
 CLI client commands are issued from a separate terminal, and the supervisor returns a structured response over the Unix domain socket control channel.
 
 ### SS5. Soft-limit warning event
-![Soft-limit event](screenshots/ss5_soft_limit.jpeg)
+![Soft-limit event]![alt text](6.png)
 `dmesg` records first threshold crossing at soft memory limit.
 
 ### SS6. Hard-limit enforcement
-![Hard-limit event](screenshots/ss6_hard_limit_killed.jpeg)
+![Hard-limit event]![alt text](7.png)
 Container state shows kill outcome after exceeding configured limits.
 
 ### SS7. Scheduling experiment evidence
-![Scheduling evidence](screenshots/ss7_scheduling.jpeg)
+![Scheduling evidence]![alt text](8.png)
 Different `nice` values produce visible CPU-share differences.
 
 ### SS8. Clean teardown
-![Teardown](screenshots/ss8_cleanup.jpeg)
+![Teardown]![alt text](9.png)
 No leftover supervisor/container zombies after shutdown.
 
 ---
