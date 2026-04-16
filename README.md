@@ -278,7 +278,7 @@ sudo ./engine stop beta
 ps aux | grep -E 'defunct|engine'
 
 # 8) Inspect kernel events and unload module
-dmesg | tail -n 50
+dmesg | tail -n 20
 sudo rmmod monitor
 ```
 
